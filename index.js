@@ -23,3 +23,14 @@ function updateObjectWithKeyAndValue(obj, key, value) {
  
   return Object.assign({}, obj, { [key]: value })
 }
+var obj = { foo: 'bar' }
+ 
+var newObj = Object.assign({}, obj)
+ 
+newObj // { foo: 'bar' }
+ 
+delete newObj.foo // true
+ 
+newObj // {}
+ 
+obj // { foo: 'bar' }
